@@ -36,6 +36,17 @@ const apps = [
         featured: true
     },
     {
+        id: 'zenity',
+        name: 'Zenity',
+        icon: '🧘',
+        description: 'Mindfulness and meditation app to help you relax, focus, and sleep better. Take a break from the digital chaos.',
+        version: 'v0.9.1',
+        size: '7.2 MB',
+        downloadUrl: 'Zenity/assets/apk/zenity.apk',
+        pageUrl: 'Zenity/zenity.html',
+        featured: true
+    },
+    {
         id: 'groupnote',
         name: 'Group Note App',
         icon: '👥',
@@ -79,17 +90,6 @@ const apps = [
         pageUrl: 'WeatherApp/weatherApp.html',
         featured: true
     },
-    {
-        id: 'zenity',
-        name: 'Zenity',
-        icon: '🧘',
-        description: 'Mindfulness and meditation app to help you relax, focus, and sleep better. Take a break from the digital chaos.',
-        version: 'v2.2.1',
-        size: '6.3 MB',
-        downloadUrl: 'Zenity/assets/apk/zenity.apk',
-        pageUrl: 'Zenity/zenity.html',
-        featured: false
-    }
 ];
 
 // Statistics counters

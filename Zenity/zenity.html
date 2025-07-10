@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#121212"/>
+    <title>Zenity - AppMandi</title>
+    <link rel="stylesheet" href="zenity.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html" class="back-btn">← Back to AppMandi</a>
+            <span class="app-name">🧘 Zenity</span>
+        </div>
+        <details class="nav-toggle">
+            <summary class="nav-summary">☰ Menu</summary>
+            <nav class="nav">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#developer" class="nav-link">Developer</a>
+            </nav>
+        </details>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="overview">
+    <div class="container">
+        <div class="hero-content">
+            <div class="app-header">
+                <div class="app-icon">🧘</div>
+                <div class="app-info">
+                    <h1 class="app-title">Zenity</h1>
+                    <p class="app-subtitle">Mental wellness platform connecting you to verified therapists and community support</p>
+                    <div class="app-meta">
+                        <span class="version">v0.9.1</span>
+                        <span class="size">7.2 MB</span>
+                        <span class="category">Mental Health</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="assets/apk/zenity.apk" class="btn btn-primary" id="download-btn">📥 Download APK</a>
+                <button class="btn btn-secondary" onclick="shareApp()">📤 Share App</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Description -->
+<section class="description">
+    <div class="container">
+        <h2>Why Zenity? 💬</h2>
+        <div class="description-content">
+            <p>
+                Zenity is a mental health app designed for quick, safe, and verified therapist access. Built to be deployed in 4 days, Zenity focuses on the core essentials: connecting users with licensed professionals, booking therapy sessions, chatting securely, and engaging with wellness communities.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>User Authentication</h3>
+                    <p>Signup/Login for patients and therapists with secure Firebase Authentication.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👩‍⚕️</div>
+                    <h3>Therapist Profiles</h3>
+                    <p>View verified therapist profiles with specialization and availability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Session Booking</h3>
+                    <p>Patients can request sessions with therapists.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Realtime Chat</h3>
+                    <p>Secure 1-on-1 chat between patients and therapists using Firebase Realtime DB.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Community Forum</h3>
+                    <p>Public thread-based forum for wellness discussions and support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Admin Panel</h3>
+                    <p>Admins can review and verify therapists to ensure trust and safety.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download -->
+<section class="download-section" id="download">
+    <div class="container">
+        <h2>📥 Download & Installation</h2>
+        <div class="download-content">
+            <div class="download-info">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>📱 Android 7.0+</li>
+                    <li>💾 20 MB free space</li>
+                    <li>🌐 Internet for chat, booking, and auth</li>
+                </ul>
+                <h3>Installation Instructions</h3>
+                <ol>
+                    <li>Download the APK</li>
+                    <li>Enable “Install Unknown Apps” in settings</li>
+                    <li>Open and install the APK</li>
+                    <li>Sign up and start your wellness journey!</li>
+                </ol>
+            </div>
+            <div class="download-stats">
+                <div class="stat-item">
+                    <div class="stat-number">7.2 MB</div>
+                    <div class="stat-label">App Size</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">v0.9.1</div>
+                    <div class="stat-label">Latest Version</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Beta</div>
+                    <div class="stat-label">MVP Release</div>
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <a href="assets/apk/zenity.apk" class="btn btn-primary btn-large" id="main-download">📥 Download Zenity</a>
+            <button class="btn btn-secondary" onclick="copyDownloadLink()">🔗 Copy Download Link</button>
+        </div>
+    </div>
+</section>
+
+<!-- Developer -->
+<section class="developer-section" id="developer">
+    <div class="container">
+        <h2>👨‍💻 Developer Notes</h2>
+        <div class="developer-content">
+            <div class="developer-info">
+                <div class="developer-avatar">🧘‍♂️</div>
+                <div class="developer-text">
+                    <h3>From the Developer</h3>
+                    <p>
+                        Zenity was built as a fast, focused MVP mental health app using Firebase and MVVM.
+                        Its goal is to prove how quickly essential care connections can be built and tested in the real world.
+                    </p>
+                    <p>
+                        The admin panel allows us to ensure all therapists are verified before sessions begin, ensuring a safe platform for all users.
+                    </p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>🛠️ Built With</h3>
+                <div class="tech-items">
+                    <span class="tech-item">Kotlin</span>
+                    <span class="tech-item">MVVM</span>
+                    <span class="tech-item">Firebase Auth</span>
+                    <span class="tech-item">Realtime DB</span>
+                    <span class="tech-item">Firestore</span>
+                    <span class="tech-item">SharedPreferences</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Open Source -->
+<section class="source-section">
+    <div class="container">
+        <div class="source-card">
+            <h2>🐙 Open Source</h2>
+            <p>
+                Zenity’s MVP is open to feedback and contributions. Therapists, developers, and users alike
+                can help improve the platform for everyone.
+            </p>
+            <div class="source-buttons">
+                <a href="https://github.com/ramoliyaYug/zenity" class="btn btn-github" target="_blank">🐙 View on GitHub</a>
+                <a href="https://github.com/ramoliyaYug/zenity/issues" class="btn btn-secondary" target="_blank">🐛 Report Issue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🧘 Zenity</h4>
+                <p>Your pocket therapist companion</p>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Links</h4>
+                <ul>
+                    <li><a href="../index.html">← Back to AppMandi</a></li>
+                    <li><a href="#download">Download APK</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/zenity">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Support</h4>
+                <ul>
+                    <li><a href="mailto:ramoliyayug55@gmail.com">📧 Email Support</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/zenity/issues">🐛 Report Bug</a></li>
+                    <li><a href="#developer">👨‍💻 Developer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Zenity. Made with 🧠 & ❤️ by AppMandi</p>
+            <p class="footer-note">"Mental wellness starts with one safe conversation."</p>
+        </div>
+    </div>
+</footer>
+
+<script src="zenity.js"></script>
+</body>
+</html>
