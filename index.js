@@ -25,6 +25,17 @@ const apps = [
         featured: true
     },
     {
+        id: 'quantumchat',
+        name: 'Quantum Chat',
+        icon: '💬',
+        description: 'Secure messaging app with safe authentication. Fast, reliable, and privacy-focused for all your conversations.',
+        version: 'v1.0.0',
+        size: '5.8 MB',
+        downloadUrl: 'QuantumChat/assets/apk/quantumchat.apk',
+        pageUrl: 'QuantumChat/quantumChat.html',
+        featured: true
+    },
+    {
         id: 'groupnote',
         name: 'Group Note App',
         icon: '👥',
@@ -45,17 +56,6 @@ const apps = [
         downloadUrl: 'ProjectSync/assets/apk/projectsync.apk',
         pageUrl: 'ProjectSync/projectSync.html',
         featured: false
-    },
-    {
-        id: 'quantumchat',
-        name: 'Quantum Chat',
-        icon: '💬',
-        description: 'Secure messaging app with end-to-end encryption. Fast, reliable, and privacy-focused for all your conversations.',
-        version: 'v2.1.0',
-        size: '5.2 MB',
-        downloadUrl: 'QuantumChat/assets/apk/quantumchat.apk',
-        pageUrl: 'QuantumChat/quantumChat.html',
-        featured: true
     },
     {
         id: 'vmm',

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#121212"/>
+    <title>Quantum Chat - AppMandi</title>
+    <link rel="stylesheet" href="quantumChat.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html" class="back-btn">← Back to AppMandi</a>
+            <span class="app-name">📡 Quantum Chat</span>
+        </div>
+        <details class="nav-toggle">
+            <summary class="nav-summary">☰ Menu</summary>
+            <nav class="nav">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#developer" class="nav-link">Developer</a>
+            </nav>
+        </details>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="overview">
+    <div class="container">
+        <div class="hero-content">
+            <div class="app-header">
+                <div class="app-icon">📡</div>
+                <div class="app-info">
+                    <h1 class="app-title">Quantum Chat</h1>
+                    <p class="app-subtitle">Realtime chat app with private messaging powered by Firebase</p>
+                    <div class="app-meta">
+                        <span class="version">v1.0.0</span>
+                        <span class="size">5.8 MB</span>
+                        <span class="category">Communication</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="assets/apk/quantumchat.apk" class="btn btn-primary" id="download-btn">📥 Download APK</a>
+                <button class="btn btn-secondary" onclick="shareApp()">📤 Share App</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Description -->
+<section class="description">
+    <div class="container">
+        <h2>Why Quantum Chat? 🔐</h2>
+        <div class="description-content">
+            <p>
+                Quantum Chat is a fast and modern real-time messaging app with secure authentication and private chat features. Connect with anyone using email and password login, and enjoy seamless, Firebase-powered conversations.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Secure Authentication</h3>
+                    <p>Sign up or log in using email & password. Firebase Auth keeps your data safe.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Realtime Chat</h3>
+                    <p>Send and receive messages instantly using Firebase Realtime Database.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Private Messaging</h3>
+                    <p>One-on-one private chats built with Fragments and RecyclerView.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightweight</h3>
+                    <p>Optimized for performance and minimal storage usage (just 8 MB).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download Section -->
+<section class="download-section" id="download">
+    <div class="container">
+        <h2>📥 Download & Installation</h2>
+        <div class="download-content">
+            <div class="download-info">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>📱 Android 6.0 or higher</li>
+                    <li>💾 10 MB free storage</li>
+                    <li>🌐 Internet connection for messaging</li>
+                </ul>
+
+                <h3>Installation Instructions</h3>
+                <ol>
+                    <li>Download the APK file</li>
+                    <li>Go to Settings → Security → Unknown Sources</li>
+                    <li>Enable "Install unknown apps"</li>
+                    <li>Open the downloaded APK file</li>
+                    <li>Tap "Install" and start chatting! 📡</li>
+                </ol>
+            </div>
+            <div class="download-stats">
+                <div class="stat-item">
+                    <div class="stat-number">5.8 MB</div>
+                    <div class="stat-label">App Size</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">v1.0.0</div>
+                    <div class="stat-label">Latest Version</div>
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <a href="assets/apk/quantumchat.apk" class="btn btn-primary btn-large" id="main-download">📥 Download Quantum Chat</a>
+            <button class="btn btn-secondary" onclick="copyDownloadLink()">🔗 Copy Download Link</button>
+        </div>
+    </div>
+</section>
+
+<!-- Developer Section -->
+<section class="developer-section" id="developer">
+    <div class="container">
+        <h2>👨‍💻 Developer Notes</h2>
+        <div class="developer-content">
+            <div class="developer-info">
+                <div class="developer-avatar">🧑‍💻</div>
+                <div class="developer-text">
+                    <h3>From the Developer</h3>
+                    <p>
+                        Quantum Chat is designed to bring secure and instant messaging to Android users with a clean UI and robust Firebase backend.
+                    </p>
+                    <p>
+                        Whether you're learning Firebase or looking for a reliable private messaging app, Quantum Chat is built for you — minimal, modern, and fully open-source.
+                    </p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>🛠️ Built With</h3>
+                <div class="tech-items">
+                    <span class="tech-item">Kotlin</span>
+                    <span class="tech-item">XML</span>
+                    <span class="tech-item">Firebase Auth</span>
+                    <span class="tech-item">Firebase Realtime DB</span>
+                    <span class="tech-item">Fragments + RecyclerView</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Source Code Section -->
+<section class="source-section">
+    <div class="container">
+        <div class="source-card">
+            <h2>🐙 Open Source</h2>
+            <p>
+                Explore the source code, report issues, or contribute new features. Quantum Chat is built by developers, for developers.
+            </p>
+            <div class="source-buttons">
+                <a href="https://github.com/ramoliyaYug/AndroidModule2/tree/main/chatAppFirebase" class="btn btn-github" target="_blank">🐙 View on GitHub</a>
+                <a href="https://github.com/ramoliyaYug/AndroidModule2/issues" class="btn btn-secondary" target="_blank">🐛 Report Issue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>📡 Quantum Chat</h4>
+                <p>Realtime messaging with Firebase power</p>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Links</h4>
+                <ul>
+                    <li><a href="../index.html">← Back to AppMandi</a></li>
+                    <li><a href="#download">Download APK</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/AndroidModule2/tree/main/chatAppFirebase">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Support</h4>
+                <ul>
+                    <li><a href="mailto:ramoliyayug55@gmail.com">📧 Email Support</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/AndroidModule2/issues">🐛 Report Bug</a></li>
+                    <li><a href="#developer">👨‍💻 Developer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Quantum Chat. Made with 💬 by AppMandi</p>
+            <p class="footer-note">"Realtime chat, realtime connection." 🚀</p>
+        </div>
+    </div>
+</footer>
+
+<script src="quantumChat.js"></script>
+</body>
+</html>
