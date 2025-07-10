@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#121212">
+  <meta name="description" content="AppMandi - A collection of handcrafted Android apps made with love">
+  <title>AppMandi - Desi Apps Ka Adda! 🏪</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <span class="logo-text">🏪 AppMandi</span>
+      <span class="tagline">Desi Apps Ka Adda!</span>
+    </div>
+    <nav class="nav">
+      <a href="#home" class="nav-link">Home 🏠</a>
+      <a href="#apps" class="nav-link">Apps 📱</a>
+      <a href="#about" class="nav-link">About 👨‍💻</a>
+      <a href="#contact" class="nav-link">Contact 📞</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Welcome to AppMandi! 🎉
+        <br>
+        <span class="hero-subtitle">Apna Desi App Store</span>
+      </h1>
+      <p class="hero-description">
+        Yahan milte hain sabse cool aur quirky Android apps!
+        Made with ❤️ by a desi developer who believes in
+        "Jugaad > Corporate" philosophy! 😎
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="scrollToApps()">
+          🚀 Explore Apps
+        </button>
+        <button class="btn btn-secondary" onclick="showAbout()">
+          👨‍💻 About Developer
+        </button>
+      </div>
+    </div>
+    <div class="hero-emoji">
+      <div class="floating-emoji">📱</div>
+      <div class="floating-emoji">🎯</div>
+      <div class="floating-emoji">⚡</div>
+      <div class="floating-emoji">🔥</div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="container">
+    <div class="stat-card">
+      <div class="stat-number" id="apps-count">1</div>
+      <div class="stat-label">Apps Available</div>
+    </div>
+  </div>
+</section>
+
+<!-- Apps Section -->
+<section class="apps-section" id="apps">
+  <div class="container">
+    <h2 class="section-title">
+      🎪 Featured Apps
+      <span class="section-subtitle">Handpicked with love!</span>
+    </h2>
+
+    <div class="apps-grid" id="apps-grid">
+      <!-- App cards will be populated by JavaScript -->
+    </div>
+
+    <div class="coming-soon">
+      <h3>🚧 More Apps Coming Soon! 🚧</h3>
+      <p>Currently brewing more awesome apps in the background.
+        Stay tuned for updates! 🔔</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+  <div class="container">
+    <h2 class="section-title">
+      🤓 About AppMandi
+      <span class="section-subtitle">The story behind the chaos</span>
+    </h2>
+
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Why AppMandi? 🤔</h3>
+        <p>
+          Tired of corporate app stores with their fancy algorithms and
+          complicated policies? AppMandi is here to rescue you!
+          It's like your neighborhood <em>sabzi mandi</em> but for apps! 🥕📱
+        </p>
+
+        <h3>What makes us special? ✨</h3>
+        <ul>
+          <li>🎨 Apps made with love, not deadlines</li>
+          <li>🔓 No unnecessary permissions or ads</li>
+          <li>💯 Tested on real devices (not emulators!)</li>
+          <li>🤝 Direct connection with the developer</li>
+          <li>🎪 Fun and quirky user experience</li>
+        </ul>
+
+        <h3>Developer Note 📝</h3>
+        <p>
+          Hi! I'm just a passionate developer who loves creating
+          useful apps without the corporate nonsense. Every app here
+          is crafted with care and a lot of chai! ☕
+        </p>
+      </div>
+
+      <div class="about-image">
+        <div class="developer-avatar">
+          👨‍💻
+        </div>
+        <div class="code-snippet">
+                        <pre><code>while(true) {
+    drinkChai();
+    writeCode();
+    if(appWorking) {
+        celebrate();
+    }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🏪 AppMandi</h4>
+        <p>Making Android apps fun again!</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>📱 Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>🤝 Connect</h4>
+        <div class="social-links">
+          <a href="mailto:ramoliyayug55@gmail.com" class="social-link">📧 Email</a>
+          <a href="https://github.com/ramoliyaYug" class="social-link">🐙 GitHub</a>
+          <a href="#" class="social-link">🐦 Twitter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 AppMandi. Made with ❤️ and lots of chai ☕</p>
+      <p class="footer-note">
+        "Code karo, chai piyo, repeat!" - Ancient Developer Wisdom
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

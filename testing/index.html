@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppMandi 🛒 - Sab kuch milega!</title>
+    <style>
+        /* AppMandi CSS - Desi + Funny + Cute + Chaotic Design */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff6b6b, #ffd93d, #74b9ff, #fd79a8);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* App Cards */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .app-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #ffd93d, #74b9ff, #fd79a8);
+        }
+
+        .app-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .app-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .app-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 0.5rem;
+        }
+
+        .badge.beta {
+            background: #74b9ff;
+            color: white;
+        }
+
+        .badge.hit {
+            background: #fd79a8;
+            color: white;
+        }
+
+        .badge.new {
+            background: #00b894;
+            color: white;
+        }
+
+        .app-button {
+            background: linear-gradient(45deg, #74b9ff, #fd79a8);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .app-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* About Section */
+        .about {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .about h2 {
+            color: #333;
+            text-shadow: none;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            background: linear-gradient(45deg, #333, #555);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-message {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Fun animations */
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">AppMandi 🛒</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1 class="floating">AppMandi 🛒</h1>
+        <p class="tagline">Sab kuch milega — code, crash aur coffee! ☕</p>
+        <a href="#apps" class="cta-button">Explore Apps 🚀</a>
+    </section>
+
+    <!-- Featured Apps Section -->
+    <section id="featured" class="section">
+        <h2>Featured Apps ⭐</h2>
+        <div class="app-grid">
+            <div class="app-card">
+                <span class="app-icon">💬</span>
+                <h3>ChugliHub</h3>
+                <p>Anonymous chat app where gossip meets technology! Share secrets safely.</p>
+                <div class="badge hit">🔥 Hit Hai Bhai!</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('ChugliHub')">View App</a>
+            </div>
+            <div class="app-card">
+                <span class="app-icon">🎯</span>
+                <h3>TaskMaster Pro</h3>
+                <p>Productivity app that actually works! No more "I'll do it tomorrow" excuses.</p>
+                <div class="badge beta">✨ Beta</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('TaskMaster Pro')">View App</a>
+            </div>
+            <div class="app-card">
+                <span class="app-icon">🍕</span>
+                <h3>FoodieFinderr</h3>
+                <p>Find the best street food in your area. Tested by real foodies!</p>
+                <div class="badge new">🆕 New</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('FoodieFinderr')">View App</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Apps Section -->
+    <section id="apps" class="section">
+        <h2>All Apps 📱</h2>
+        <div class="app-grid">
+            <div class="app-card">
+                <span class="app-icon">🎵</span>
+                <h3>BeatBox Desi</h3>
+                <p>Music player with Bollywood vibes and regional beats collection.</p>
+                <div class="badge hit">🔥 Hit Hai Bhai!</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('BeatBox Desi')">View App</a>
+            </div>
+            <div class="app-card">
+                <span class="app-icon">📝</span>
+                <h3>NotePad++</h3>
+                <p>Simple note-taking app with cloud sync and emoji support!</p>
+                <div class="badge beta">✨ Beta</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('NotePad++')">View App</a>
+            </div>
+            <div class="app-card">
+                <span class="app-icon">🏏</span>
+                <h3>Cricket Guru</h3>
+                <p>Live cricket scores, player stats, and match predictions.</p>
+                <div class="badge new">🆕 New</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('Cricket Guru')">View App</a>
+            </div>
+            <div class="app-card">
+                <span class="app-icon">🚗</span>
+                <h3>RideShare Local</h3>
+                <p>Carpooling app for local communities with safety features.</p>
+                <div class="badge beta">✨ Beta</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('RideShare Local')">View App</a>
+            </div>
+            <div class="app-card">
+                <span class="app-icon">📚</span>
+                <h3>StudyBuddy</h3>
+                <p>Study planner with Pomodoro timer and progress tracking.</p>
+                <div class="badge new">🆕 New</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('StudyBuddy')">View App</a>
+            </div>
+            <div class="app-card">
+                <span class="app-icon">💰</span>
+                <h3>ExpenseTracker</h3>
+                <p>Track your spending habits with funny categories and insights.</p>
+                <div class="badge hit">🔥 Hit Hai Bhai!</div>
+                <br><br>
+                <a href="#" class="app-button" onclick="showAppDetails('ExpenseTracker')">View App</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about">
+            <h2>About AppMandi 👨‍💻</h2>
+            <p>
+                Welcome to AppMandi, where coding meets comedy! 🎭<br><br>
+                This is my personal app store where I showcase all the apps I've built during late-night coding sessions, 
+                fueled by endless cups of chai and the occasional existential crisis about semicolons. 
+                Each app here is crafted with love, caffeine, and a healthy dose of "it works on my machine" confidence.
+            </p>
+            <p>
+                From productivity tools to entertainment apps, everything here is made by a developer who believes 
+                that good code should be like good food - it should work, taste great, and leave you wanting more! 🍽️
+            </p>
+            <div class="social-links">
+                <a href="#" class="social-link">🐙 GitHub</a>
+                <a href="#" class="social-link">🐦 Twitter</a>
+                <a href="#" class="social-link">💼 LinkedIn</a>
+                <a href="#" class="social-link">📧 Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-message">
+            Made with ❤️ + ☕ + Ctrl+Z
+        </div>
+        <p>© 2024 AppMandi - Where bugs become features! 🐛➡️✨</p>
+    </footer>
+
+    <!-- Modal for App Details -->
+    <div id="appModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 1000; padding: 2rem;">
+        <div style="background: white; border-radius: 20px; max-width: 800px; margin: 0 auto; padding: 2rem; position: relative; max-height: 80vh; overflow-y: auto;">
+            <button onclick="closeModal()" style="position: absolute; top: 1rem; right: 1rem; background: #ff6b6b; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 1.5rem; cursor: pointer;">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // AppMandi JavaScript - Adding interactivity and fun
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // App details modal function
+        function showAppDetails(appName) {
+            const appDetails = {
+                'ChugliHub': {
+                    icon: '💬',
+                    name: 'ChugliHub',
+                    version: 'v2.1.0',
+                    description: 'Anonymous chat application where privacy meets gossip! Share your thoughts, secrets, and random discussions without revealing your identity. Perfect for those late-night philosophical debates and office gossip sessions.',
+                    features: [
+                        'Anonymous chat rooms',
+                        'Real-time messaging',
+                        'Custom avatars',
+                        'Message reactions',
+                        'Dark mode support'
+                    ],
+                    warning: '⚠️ This app was built during a 3 AM coding marathon fueled by pizza and determination!',
+                    github: 'https://github.com/yourusername/chugliHub',
+                    download: '../ChugliHub-anonymousChatApp/assets/apk/anonymousChatApp.apk'
+                },
+                'TaskMaster Pro': {
+                    icon: '🎯',
+                    name: 'TaskMaster Pro',
+                    version: 'v1.5.2',
+                    description: 'The productivity app that actually gets you to be productive! With smart reminders, progress tracking, and a dose of motivation, say goodbye to procrastination forever.',
+                    features: [
+                        'Smart task scheduling',
+                        'Progress analytics',
+                        'Pomodoro timer',
+                        'Goal setting',
+                        'Habit tracking'
+                    ],
+                    warning: '⚠️ Side effects may include: sudden urges to organize your life and actually completing your to-do lists!',
+                    github: 'https://github.com/yourusername/taskmaster-pro',
+                    download: '#'
+                },
+                'FoodieFinderr': {
+                    icon: '🍕',
+                    name: 'FoodieFinderr',
+                    version: 'v1.0.3',
+                    description: 'Discover the best street food, restaurants, and hidden gems in your area. Rated by real foodies who take their food seriously!',
+                    features: [
+                        'Location-based search',
+                        'User reviews and ratings',
+                        'Photo gallery',
+                        'Price range filters',
+                        'Favorite spots'
+                    ],
+                    warning: '⚠️ Warning: This app may cause excessive drooling and spontaneous food cravings!',
+                    github: 'https://github.com/yourusername/foodie-finderr',
+                    download: '#'
+                },
+                'BeatBox Desi': {
+                    icon: '🎵',
+                    name: 'BeatBox Desi',
+                    version: 'v3.0.1',
+                    description: 'Music player with a desi touch! Enjoy Bollywood hits, regional music, and international tracks all in one place.',
+                    features: [
+                        'Bollywood music library',
+                        'Regional language support',
+                        'Custom playlists',
+                        'Lyrics display',
+                        'Audio equalizer'
+                    ],
+                    warning: '⚠️ May cause uncontrollable dancing and singing along to your favorite tracks!',
+                    github: 'https://github.com/yourusername/beatbox-desi',
+                    download: '#'
+                },
+                'NotePad++': {
+                    icon: '📝',
+                    name: 'NotePad++',
+                    version: 'v2.2.0',
+                    description: 'Simple yet powerful note-taking app with cloud sync, markdown support, and emoji integration.',
+                    features: [
+                        'Cloud synchronization',
+                        'Markdown support',
+                        'Emoji picker',
+                        'Search functionality',
+                        'Export options'
+                    ],
+                    warning: '⚠️ This app was debugged with more coffee than actual code!',
+                    github: 'https://github.com/yourusername/notepad-plus',
+                    download: '#'
+                },
+                'Cricket Guru': {
+                    icon: '🏏',
+                    name: 'Cricket Guru',
+                    version: 'v1.4.1',
+                    description: 'Your ultimate cricket companion with live scores, player statistics, and match predictions.',
+                    features: [
+                        'Live score updates',
+                        'Player statistics',
+                        'Match predictions',
+                        'Team rankings',
+                        'Tournament schedules'
+                    ],
+                    warning: '⚠️ May cause excessive celebration during your favorite team\'s victory!',
+                    github: 'https://github.com/yourusername/cricket-guru',
+                    download: '#'
+                },
+                'RideShare Local': {
+                    icon: '🚗',
+                    name: 'RideShare Local',
+                    version: 'v1.1.0',
+                    description: 'Community-based carpooling app with safety features and local route optimization.',
+                    features: [
+                        'Safe ride matching',
+                        'Real-time tracking',
+                        'Community verification',
+                        'Cost splitting',
+                        'Emergency contacts'
+                    ],
+                    warning: '⚠️ Built with the hope that people can share rides without sharing awkward silences!',
+                    github: 'https://github.com/yourusername/rideshare-local',
+                    download: '#'
+                },
+                'StudyBuddy': {
+                    icon: '📚',
+                    name: 'StudyBuddy',
+                    version: 'v1.3.2',
+                    description: 'Study planner with Pomodoro technique, progress tracking, and motivational quotes.',
+                    features: [
+                        'Pomodoro timer',
+                        'Study schedule',
+                        'Progress analytics',
+                        'Motivational quotes',
+                        'Achievement badges'
+                    ],
+                    warning: '⚠️ Side effects include: improved grades and feeling like a study superhero!',
+                    github: 'https://github.com/yourusername/study-buddy',
+                    download: '#'
+                },
+                'ExpenseTracker': {
+                    icon: '💰',
+                    name: 'ExpenseTracker',
+                    version: 'v2.0.5',
+                    description: 'Track your expenses with funny categories and insights. Finally understand where your money actually goes!',
+                    features: [
+                        'Expense categorization',
+                        'Budget planning',
+                        'Spending insights',
+                        'Bill reminders',
+                        'Export reports'
+                    ],
+                    warning: '⚠️ May cause sudden realization about your coffee addiction expenses!',
+                    github: 'https://github.com/yourusername/expense-tracker',
+                    download: '#'
+                }
+            };
+
+            const app = appDetails[appName];
+            if (!app) return;
+
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <span style="font-size: 4rem; display: block; margin-bottom: 1rem;">${app.icon}</span>
+                    <h2 style="color: #333; margin-bottom: 0.5rem;">${app.name}</h2>
+                    <p style="color: #666; font-size: 1.1rem;">${app.version}</p>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: #333; margin-bottom: 1rem;">Description</h3>
+                    <p style="color: #666; line-height: 1.6;">${app.description}</p>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: #333; margin-bottom: 1rem;">Features</h3>
+                    <ul style="color: #666; line-height: 1.6;">
+                        ${app.features.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 10px; padding: 1rem; margin-bottom: 2rem;">
+                    <p style="color: #856404; margin: 0; font-weight: 600;">${app.warning}</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <a href="${app.download}" style="background: linear-gradient(45deg, #00b894, #00cec9); color: white; padding: 1rem 2rem; border-radius: 25px; text-decoration: none; margin-right: 1rem; display: inline-block; font-weight: 600;">📱 Download APK</a>
+                    <a href="${app.github}" style="background: linear-gradient(45deg, #333, #555); color: white; padding: 1rem 2rem; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: 600;">🐙 View on GitHub</a>
+                </div>
+            `;
+
+            document.getElementById('appModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('appModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('appModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Add some fun interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add floating animation to app cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'float 3s ease-in-out infinite';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.app-card').forEach(card => {
+                observer.observe(card);
+            });
+
+            // Add click effect to buttons
+            document.querySelectorAll('.app-button, .cta-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+        });
+
+        // Easter egg: Konami code for fun surprise
+        let konamiCode = [];
+        const konamiSequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+        document.addEventListener('keydown', function(e) {
+            konamiCode.push(e.keyCode);
+            if (konamiCode.length > konamiSequence.length) {
+                konamiCode.shift();
+            }
+            if (konamiCode.join('') === konamiSequence.join('')) {
+                document.body.style.animation = 'none';
+                document.body.style.background = 'linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3)';
+                document.body.style.backgroundSize = '400% 400%';
+                document.body.style.animation = 'gradientShift 1s ease infinite';
+                
+                // Show celebration message
+                const celebration = document.createElement('div');
+                celebration.innerHTML = '🎉 Konami Code Activated! You found the easter egg! 🎉';
+                celebration.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: white;
+                    padding: 2rem;
+                    border-radius: 20px;
+                    z-index: 9999;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #333;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                `;
+                document.body.appendChild(celebration);
+                
+                setTimeout(() => {
+                    celebration.remove();
+                    document.body.style.background = 'linear-gradient(135deg, #ff6b6b, #ffd93d, #74b9ff, #fd79a8)';
+                    document.body.style.backgroundSize = '400% 400%';
+                    document.body.style.animation = 'gradientShift 15s ease infinite';
+                }, 3000);
+                
+                konamiCode = [];
+            }
+        });
+
+        // Fun console message for developers
+        console.log(`
+        🛒 Welcome to AppMandi Console! 🛒
+        
+        ╔════════════════════════════════════════╗
+        ║  You seem like a curious developer!    ║
+        ║  Here are some fun commands to try:    ║
+        ║                                        ║
+        ║  • Try the Konami Code: ↑↑↓↓←→←→BA     ║
+        ║  • Check out the CSS animations        ║
+        ║  • Inspect the modal functionality     ║
+        ║                                        ║
+        ║  Made with ❤️ + ☕ + late nights      ║
+        ╚════════════════════════════════════════╝
+        
+        P.S. - If you find any bugs, they're features! 🐛➡️✨
+        `);
+    </script>
+</body>
+</html>
