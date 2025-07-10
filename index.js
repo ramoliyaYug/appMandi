@@ -8,9 +8,20 @@ const apps = [
         icon: '😼',
         description: 'Anonymous chat app jaha tum bina dare apni chugliyaan share kar sakte ho. Full drama, full fun — bilkul no filter!',
         version: 'v1.2.0',
-        size: '2.5 MB',
+        size: '6 MB',
         downloadUrl: 'ChugliHub/assets/apk/chuglihub.apk',
         pageUrl: 'ChugliHub/chugliHub.html',
+        featured: true
+    },
+    {
+        id: 'levelup',
+        name: 'Level Up',
+        icon: '🎮',
+        description: 'Turn your daily tasks into a game like solo leveling! Earn points, level up, and stay motivated while completing your to-do list.',
+        version: 'v1.0.3',
+        size: '12.3 MB',
+        downloadUrl: 'LevelUp/assets/apk/levelup.apk',
+        pageUrl: 'LevelUp/levelUp.html',
         featured: true
     },
     {
@@ -22,17 +33,6 @@ const apps = [
         size: '3.2 MB',
         downloadUrl: 'GroupNoteApp/assets/apk/groupnoteapp.apk',
         pageUrl: 'GroupNoteApp/groupNoteApp.html',
-        featured: true
-    },
-    {
-        id: 'levelup',
-        name: 'Level Up',
-        icon: '🎮',
-        description: 'Turn your daily tasks into a game! Earn points, level up, and stay motivated while completing your to-do list.',
-        version: 'v2.0.1',
-        size: '4.1 MB',
-        downloadUrl: 'LevelUp/assets/apk/levelup.apk',
-        pageUrl: 'LevelUp/levelUp.html',
         featured: true
     },
     {

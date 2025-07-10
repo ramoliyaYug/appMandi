@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Level Up - AppMandi</title>
+    <link rel="stylesheet" href="levelUp.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html" class="back-btn">← Back to AppMandi</a>
+            <span class="app-name">⚔️ Level Up</span>
+        </div>
+        <nav class="nav">
+            <a href="#overview" class="nav-link">Overview</a>
+            <a href="#download" class="nav-link">Download</a>
+            <a href="#developer" class="nav-link">Developer</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="overview">
+    <div class="container">
+        <div class="hero-content">
+            <div class="app-header">
+                <div class="app-icon">⚔️</div>
+                <div class="app-info">
+                    <h1 class="app-title">Level Up</h1>
+                    <p class="app-subtitle">Gamified Habit Tracker for real-life adventurers!</p>
+                    <div class="app-meta">
+                        <span class="version">v1.0.3</span>
+                        <span class="size">12.3 MB</span>
+                        <span class="category">Productivity RPG</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="assets/apk/levelup.apk" class="btn btn-primary" id="download-btn">📥 Download APK</a>
+                <button class="btn btn-secondary" onclick="shareApp()">📤 Share App</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Description -->
+<section class="description">
+    <div class="container">
+        <h2>Why Level Up? 🧙</h2>
+        <div class="description-content">
+            <p>
+                Transform your everyday habits into epic quests! “Level Up” is an RPG-style habit tracker
+                where brushing teeth gives EXP and drinking water makes you stronger. Simple tasks become epic
+                as you gain gold, level up, and unlock skills.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>EXP Progress</h3>
+                    <p>Each habit completed grants EXP — grow stronger daily.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Stats System</h3>
+                    <p>Track Strength, Dexterity & Intelligence like an RPG character.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Inventory</h3>
+                    <p>Unlock weapons, potions & gear as you complete tasks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Skill Tree</h3>
+                    <p>Master new skills by sticking to your routine.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Daily Quests</h3>
+                    <p>Do quests (habits) every day. Stay on your streak!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌑</div>
+                    <h3>Dark Mode</h3>
+                    <p>Fantasy UI designed for night owls and dungeon delvers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download -->
+<section class="download-section" id="download">
+    <div class="container">
+        <h2>📥 Download & Installation</h2>
+        <div class="download-content">
+            <div class="download-info">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>📱 Android 6.0+</li>
+                    <li>💾 20 MB storage</li>
+                    <li>📶 Internet for syncing & cloud backup</li>
+                </ul>
+                <h3>Installation Instructions</h3>
+                <ol>
+                    <li>Download the APK</li>
+                    <li>Allow "Install from Unknown Sources"</li>
+                    <li>Install and launch the game</li>
+                    <li>Create your adventurer name and begin questing!</li>
+                </ol>
+            </div>
+            <div class="download-stats">
+                <div class="stat-item">
+                    <div class="stat-number">12.3 MB</div>
+                    <div class="stat-label">App Size</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">v1.0.3</div>
+                    <div class="stat-label">Latest Version</div>
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <a href="assets/apk/levelup.apk" class="btn btn-primary btn-large" id="main-download">📥 Download Level Up</a>
+            <button class="btn btn-secondary" onclick="copyDownloadLink()">🔗 Copy Download Link</button>
+        </div>
+    </div>
+</section>
+
+<!-- Developer Section -->
+<section class="developer-section" id="developer">
+    <div class="container">
+        <h2>👨‍💻 Developer Notes</h2>
+        <div class="developer-content">
+            <div class="developer-info">
+                <div class="developer-avatar">🧙</div>
+                <div class="developer-text">
+                    <h3>About the Creator</h3>
+                    <p>
+                        Hey adventurer! 🖖 I built Level Up to bring joy, discipline, and a bit of fantasy into everyday life.
+                        Why should only games be fun and rewarding? Let’s turn life into an RPG.
+                    </p>
+                    <p>
+                        Everything is built using native Android tools and sprinkled with some ✨ magic spells ✨ from Solo Leveling.
+                        Build discipline. Earn gold. Unlock skills. Become the main character!
+                    </p>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h3>🛠️ Built With</h3>
+                <div class="tech-items">
+                    <span class="tech-item">Kotlin</span>
+                    <span class="tech-item">Jetpack Compose</span>
+                    <span class="tech-item">Firebase Realtime DB</span>
+                    <span class="tech-item">Firebase Auth</span>
+                    <span class="tech-item">Mana & Grind</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Open Source -->
+<section class="source-section">
+    <div class="container">
+        <div class="source-card">
+            <h2>🐙 Open Source</h2>
+            <p>
+                Want to contribute to the adventure? Fork it, improve it, or just explore the code.
+                Level Up is a community-forged blade — and your pull requests are enchantments!
+            </p>
+            <div class="source-buttons">
+                <a href="https://github.com/ramoliyaYug/AndroidModule2/tree/main/sololevelinghabittrackerapp" class="btn btn-github" target="_blank">🐙 View on GitHub</a>
+                <a href="https://github.com/ramoliyaYug/AndroidModule2/issues" class="btn btn-secondary" target="_blank">🐛 Report Issue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>⚔️ Level Up</h4>
+                <p>Track habits. Earn EXP. Become legendary.</p>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Links</h4>
+                <ul>
+                    <li><a href="../index.html">← Back to AppMandi</a></li>
+                    <li><a href="#download">Download APK</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/AndroidModule2/tree/main/sololevelinghabittrackerapp">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Support</h4>
+                <ul>
+                    <li><a href="mailto:ramoliyayug55@gmail.com">📧 Email Support</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/AndroidModule2/issues">🐛 Report Bug</a></li>
+                    <li><a href="#developer">👨‍💻 Developer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Level Up. Made with ❤️, Mana, and Kotlin</p>
+            <p class="footer-note">"Push habit, gain EXP, unlock life skills!"</p>
+        </div>
+    </div>
+</footer>
+
+<script src="levelUp.js"></script>
+</body>
+</html>
