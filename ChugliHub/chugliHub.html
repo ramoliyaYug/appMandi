@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#121212"/>
     <title>ChugliHub - AppMandi</title>
-    <link rel="stylesheet" href="chugliHub.css">
+    <link rel="stylesheet" href="chugliHub.css" />
 </head>
 <body>
 <!-- Header -->
@@ -14,12 +15,15 @@
             <a href="../index.html" class="back-btn">← Back to AppMandi</a>
             <span class="app-name">💬 ChugliHub</span>
         </div>
-        <nav class="nav">
-            <a href="#overview" class="nav-link">Overview</a>
-            <a href="#screenshots" class="nav-link">Screenshots</a>
-            <a href="#download" class="nav-link">Download</a>
-            <a href="#developer" class="nav-link">Developer</a>
-        </nav>
+        <details class="nav-toggle">
+            <summary class="nav-summary">☰ Menu</summary>
+            <nav class="nav">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#screenshots" class="nav-link">Screenshots</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#developer" class="nav-link">Developer</a>
+            </nav>
+        </details>
     </div>
 </header>
 
@@ -31,136 +35,61 @@
                 <div class="app-icon">💬</div>
                 <div class="app-info">
                     <h1 class="app-title">ChugliHub</h1>
-                    <p class="app-subtitle">Sabse fast note-taking app! Lightweight, ad-free, aur bilkul simple.</p>
+                    <p class="app-subtitle">Anonymous gossip chat app — jaha secrets bolne ka darr nahi!</p>
                     <div class="app-meta">
                         <span class="version">v1.2.0</span>
                         <span class="size">2.5 MB</span>
-                        <span class="category">Productivity</span>
+                        <span class="category">Social</span>
                     </div>
                 </div>
             </div>
-
             <div class="hero-buttons">
-                <a href="assets/apk/chuglihub.apk" class="btn btn-primary" id="download-btn">
-                    📥 Download APK (2.5 MB)
-                </a>
-                <button class="btn btn-secondary" onclick="shareApp()">
-                    📤 Share App
-                </button>
+                <a href="assets/apk/chuglihub.apk" class="btn btn-primary" id="download-btn">📥 Download APK</a>
+                <button class="btn btn-secondary" onclick="shareApp()">📤 Share App</button>
             </div>
         </div>
     </div>
 </section>
 
-<!-- App Description -->
+<!-- Description -->
 <section class="description">
     <div class="container">
         <h2>Why ChugliHub? 🤔</h2>
         <div class="description-content">
             <p>
-                Looking for a lightweight note-taking app that doesn't slow down your phone? ChugliHub is
-                made for desi users who want <strong>fast, simple, and reliable</strong>
-                note-taking without any unnecessary features!
+                Tired of boring chats? ChugliHub lets you gossip anonymously with strangers or friends — bina kisi judgment ke! Perfect for late-night secrets, spicy chugli, and harmless fun.
             </p>
-
             <div class="features-grid">
                 <div class="feature-card">
+                    <div class="feature-icon">😈</div>
+                    <h3>Anonymous Chat</h3>
+                    <p>No login, no identity. Just open and start chatting with total strangers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧂</div>
+                    <h3>Spicy Confessions</h3>
+                    <p>Share chugli, break news, and confess secrets — bilkul no filter!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Privacy Focused</h3>
+                    <p>No personal data collected. Your secrets stay between you and the app.</p>
+                </div>
+                <div class="feature-card">
                     <div class="feature-icon">⚡</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Opens in under 1 second. No loading screens, no nonsense!</p>
+                    <h3>Lightweight</h3>
+                    <p>App is super small and works even on low-end phones.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Simple & Clean</h3>
-                    <p>Beautiful UI that doesn't distract from your work.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Privacy First</h3>
-                    <p>Your notes stay on your device. No cloud sync drama!</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">💾</div>
-                    <h3>Auto-Save</h3>
-                    <p>Never lose your notes. Everything saves automatically!</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🌙</div>
+                    <div class="feature-icon">🌚</div>
                     <h3>Dark Mode</h3>
-                    <p>Easy on the eyes during those late-night note-taking sessions.</p>
+                    <p>Perfect for night-time chugli under the blanket.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
-                    <h3>Smart Search</h3>
-                    <p>Find any note instantly with powerful search.</p>
+                    <div class="feature-icon">💬</div>
+                    <h3>One-Tap Connect</h3>
+                    <p>No need to sign up — just tap and enter a random gossip room!</p>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Screenshots -->
-<section class="screenshots" id="screenshots">
-    <div class="container">
-        <h2>📸 Screenshots</h2>
-        <div class="screenshots-grid">
-            <div class="screenshot-card">
-                <div class="screenshot-placeholder">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="app-bar">💬 ChugliHub</div>
-                            <div class="note-list">
-                                <div class="note-item">📄 Shopping List</div>
-                                <div class="note-item">💡 Project Ideas</div>
-                                <div class="note-item">📚 Study Notes</div>
-                                <div class="note-item">🎯 Goals for 2025</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p>Clean and organized note list</p>
-            </div>
-
-            <div class="screenshot-card">
-                <div class="screenshot-placeholder">
-                    <div class="phone-mockup">
-                        <div class="phone-screen dark-mode">
-                            <div class="app-bar">💬 ChugliHub</div>
-                            <div class="note-editor">
-                                <div class="note-title">💡 Project Ideas</div>
-                                <div class="note-content">
-                                    <p>• Mobile app for local vendors</p>
-                                    <p>• AI-powered expense tracker</p>
-                                    <p>• Community marketplace</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p>Dark mode for comfortable writing</p>
-            </div>
-
-            <div class="screenshot-card">
-                <div class="screenshot-placeholder">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="app-bar">💬 ChugliHub</div>
-                            <div class="search-interface">
-                                <div class="search-bar">🔍 Search notes...</div>
-                                <div class="search-results">
-                                    <div class="result-item">📄 Shopping List</div>
-                                    <div class="result-item">💡 Project Ideas</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p>Powerful search to find anything</p>
             </div>
         </div>
     </div>
@@ -176,7 +105,7 @@
                 <ul>
                     <li>📱 Android 5.0 (API level 21) or higher</li>
                     <li>💾 20 MB free storage space</li>
-                    <li>🎯 No internet required after installation</li>
+                    <li>🌐 Internet required for gossip feed</li>
                 </ul>
 
                 <h3>Installation Instructions</h3>
@@ -185,10 +114,9 @@
                     <li>Go to Settings → Security → Unknown Sources</li>
                     <li>Enable "Install unknown apps"</li>
                     <li>Open the downloaded APK file</li>
-                    <li>Tap "Install" and enjoy! 🎉</li>
+                    <li>Tap "Install" and start chugli! 💬</li>
                 </ol>
             </div>
-
             <div class="download-stats">
                 <div class="stat-item">
                     <div class="stat-number">2.5 MB</div>
@@ -198,20 +126,11 @@
                     <div class="stat-number">v1.2.0</div>
                     <div class="stat-label">Latest Version</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">42+</div>
-                    <div class="stat-label">Downloads</div>
-                </div>
             </div>
         </div>
-
         <div class="download-buttons">
-            <a href="assets/apk/chuglihub.apk" class="btn btn-primary btn-large" id="main-download">
-                📥 Download ChugliHub APK
-            </a>
-            <button class="btn btn-secondary" onclick="copyDownloadLink()">
-                🔗 Copy Download Link
-            </button>
+            <a href="assets/apk/chuglihub.apk" class="btn btn-primary btn-large" id="main-download">📥 Download ChugliHub APK</a>
+            <button class="btn btn-secondary" onclick="copyDownloadLink()">🔗 Copy Download Link</button>
         </div>
     </div>
 </section>
@@ -222,52 +141,25 @@
         <h2>👨‍💻 Developer Notes</h2>
         <div class="developer-content">
             <div class="developer-info">
-                <div class="developer-avatar">👨‍💻</div>
+                <div class="developer-avatar">😎</div>
                 <div class="developer-text">
                     <h3>From the Developer</h3>
                     <p>
-                        Hey there! 👋 I'm a passionate Android developer who got tired of
-                        bloated note-taking apps that take forever to load. ChugliHub
-                        was born from my frustration with existing solutions.
+                        Hello fellow gossip lovers! 👋 I made ChugliHub for those random thoughts, spicy secrets, and unspoken truths that need an outlet.
                     </p>
                     <p>
-                        This app is built with <strong>pure Android native code</strong>
-                        (no hybrid frameworks) to ensure maximum performance. Every feature
-                        is carefully crafted to provide the smoothest user experience.
+                        Built with Android native tools, ChugliHub is a passion project born out of chai-fueled rants and late-night ideas. Hope you enjoy it (but don’t get too addicted)!
                     </p>
                 </div>
             </div>
-
             <div class="tech-stack">
                 <h3>🛠️ Built With</h3>
                 <div class="tech-items">
-                    <span class="tech-item">Java</span>
-                    <span class="tech-item">Android SDK</span>
-                    <span class="tech-item">Material Design</span>
-                    <span class="tech-item">SQLite</span>
-                    <span class="tech-item">Lots of ☕</span>
-                </div>
-            </div>
-
-            <div class="development-timeline">
-                <h3>📈 Development Timeline</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">v1.0.0</div>
-                        <div class="timeline-content">Initial release with basic note-taking</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">v1.1.0</div>
-                        <div class="timeline-content">Added dark mode and search functionality</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">v1.2.0</div>
-                        <div class="timeline-content">Performance improvements and bug fixes</div>
-                    </div>
-                    <div class="timeline-item upcoming">
-                        <div class="timeline-date">v1.3.0</div>
-                        <div class="timeline-content">Coming soon: Categories and tags!</div>
-                    </div>
+                    <span class="tech-item">Kotlin</span>
+                    <span class="tech-item">Jetpack Compose</span>
+                    <span class="tech-item">Firebase</span>
+                    <span class="tech-item">Realtime DB</span>
+                    <span class="tech-item">Masala Memes</span>
                 </div>
             </div>
         </div>
@@ -280,16 +172,11 @@
         <div class="source-card">
             <h2>🐙 Open Source</h2>
             <p>
-                Want to contribute or learn from the code? Check out the source code on GitHub!
-                Pull requests and issues are welcome.
+                Want to contribute or just peek at the code? ChugliHub is open source. Pull requests, bug reports, and gossip stories are always welcome.
             </p>
             <div class="source-buttons">
-                <a href="https://github.com/yourusername/chuglihub" class="btn btn-github" target="_blank">
-                    🐙 View on GitHub
-                </a>
-                <a href="https://github.com/yourusername/chuglihub/issues" class="btn btn-secondary" target="_blank">
-                    🐛 Report Issue
-                </a>
+                <a href="https://github.com/yourusername/chuglihub" class="btn btn-github" target="_blank">🐙 View on GitHub</a>
+                <a href="https://github.com/yourusername/chuglihub/issues" class="btn btn-secondary" target="_blank">🐛 Report Issue</a>
             </div>
         </div>
     </div>
@@ -301,9 +188,8 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>💬 ChugliHub</h4>
-                <p>Fast, simple, and reliable note-taking for everyone!</p>
+                <p>Anonymous gossip with a desi tadka!</p>
             </div>
-
             <div class="footer-section">
                 <h4>🔗 Links</h4>
                 <ul>
@@ -312,7 +198,6 @@
                     <li><a href="https://github.com/yourusername/chuglihub">GitHub</a></li>
                 </ul>
             </div>
-
             <div class="footer-section">
                 <h4>📞 Support</h4>
                 <ul>
@@ -322,12 +207,9 @@
                 </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>&copy; 2025 ChugliHub. Made with ❤️ by AppMandi</p>
-            <p class="footer-note">
-                "Good code is like a good joke - it needs no explanation!" 😄
-            </p>
+            <p class="footer-note">"Code chhodo, chugli suno." 😄</p>
         </div>
     </div>
 </footer>

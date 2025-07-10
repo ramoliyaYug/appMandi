@@ -3,10 +3,10 @@
 // App data - easily extensible for new apps
 const apps = [
     {
-        id: 'quicknotes',
-        name: 'QuickNotes Pro',
-        icon: '📝',
-        description: 'Sabse fast note-taking app! Lightweight, ad-free, aur bilkul simple. Perfect for students aur professionals.',
+        id: 'chuglihub',
+        name: 'Chugli-Hub',
+        icon: '😼',
+        description: 'Anonymous chat app jaha tum bina dare apni chugliyaan share kar sakte ho. Full drama, full fun — bilkul no filter!',
         version: 'v1.2.0',
         size: '2.5 MB',
         downloadUrl: 'ChugliHub/assets/apk/chuglihub.apk',

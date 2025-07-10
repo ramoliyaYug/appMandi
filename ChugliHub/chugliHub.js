@@ -58,7 +58,7 @@ function shareApp() {
 
 // Copy download link
 function copyDownloadLink() {
-    const downloadLink = window.location.origin + '/ChugliHub/assets/apk/chuglihub.apk';
+    const downloadLink = window.location.origin + '/appMandi/ChugliHub/assets/apk/chuglihub.apk';
 
     // Create a temporary input element
     const tempInput = document.createElement('input');
