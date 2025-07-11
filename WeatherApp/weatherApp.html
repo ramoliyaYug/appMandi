@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#121212"/>
+    <title>SkyCast - AppMandi</title>
+    <link rel="stylesheet" href="weatherApp.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html" class="back-btn">← Back to AppMandi</a>
+            <span class="app-name">⛅ SkyCast</span>
+        </div>
+        <details class="nav-toggle">
+            <summary class="nav-summary">☰ Menu</summary>
+            <nav class="nav">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#developer" class="nav-link">Developer</a>
+            </nav>
+        </details>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="overview">
+    <div class="container">
+        <div class="hero-content">
+            <div class="app-header">
+                <div class="app-icon">⛅</div>
+                <div class="app-info">
+                    <h1 class="app-title">SkyCast</h1>
+                    <p class="app-subtitle">Accurate real-time weather updates with search & location-based forecasting</p>
+                    <div class="app-meta">
+                        <span class="version">v1.0.1</span>
+                        <span class="size">8.2 MB</span>
+                        <span class="category">Weather</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="assets/apk/SkyCast.apk" class="btn btn-primary" id="download-btn">📥 Download APK</a>
+                <button class="btn btn-secondary" onclick="shareApp()">📤 Share App</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Description -->
+<section class="description">
+    <div class="container">
+        <h2>Why SkyCast? ☀️</h2>
+        <div class="description-content">
+            <p>
+                SkyCast is a clean, modern Android weather app that uses your current location to deliver real-time forecasts. Whether you're searching for weather in a different city or checking your local temperature, it's fast, accurate, and beautifully built using Jetpack Compose and modern Android architecture.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Location Weather</h3>
+                    <p>Auto-fetch current location and show weather instantly using GPS.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>City Search</h3>
+                    <p>Search any city to see its current temperature, humidity, and wind speed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧱</div>
+                    <h3>Clean Architecture</h3>
+                    <p>Built with MVVM, repositories, use-cases, and separation of concerns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Retrofit API</h3>
+                    <p>Fetches real-time weather data through Retrofit and OpenWeatherMap API.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💉</div>
+                    <h3>Dependency Injection</h3>
+                    <p>Integrated with Dagger Hilt for DI, ViewModel and repository injection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Dark Theme</h3>
+                    <p>Elegant UI with full dark mode support using Jetpack Compose theming.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download -->
+<section class="download-section" id="download">
+    <div class="container">
+        <h2>📥 Download & Installation</h2>
+        <div class="download-content">
+            <div class="download-info">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>📱 Android 6.0 or above</li>
+                    <li>💾 15 MB available space</li>
+                    <li>🌐 Internet and Location Permissions</li>
+                </ul>
+
+                <h3>Installation Instructions</h3>
+                <ol>
+                    <li>Download the APK file</li>
+                    <li>Allow installation from unknown sources</li>
+                    <li>Install and open the app</li>
+                    <li>Grant location permission to fetch local weather</li>
+                </ol>
+            </div>
+            <div class="download-stats">
+                <div class="stat-item">
+                    <div class="stat-number">8.2 MB</div>
+                    <div class="stat-label">App Size</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">v1.0.1</div>
+                    <div class="stat-label">Latest Version</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Live</div>
+                    <div class="stat-label">Stable Build</div>
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <a href="assets/apk/SkyCast.apk" class="btn btn-primary btn-large" id="main-download">📥 Download SkyCast</a>
+            <button class="btn btn-secondary" onclick="copyDownloadLink()">🔗 Copy Download Link</button>
+        </div>
+    </div>
+</section>
+
+<!-- Developer -->
+<section class="developer-section" id="developer">
+    <div class="container">
+        <h2>👨‍💻 Developer Notes</h2>
+        <div class="developer-content">
+            <div class="developer-info">
+                <div class="developer-avatar">⛅</div>
+                <div class="developer-text">
+                    <h3>From the Developer</h3>
+                    <p>
+                        SkyCast was created as a modern, scalable weather app using all recommended Android best practices.
+                        I wanted to build a clean, efficient UI using Jetpack Compose and back it with a solid MVVM + DI structure.
+                    </p>
+                    <p>
+                        It’s the perfect template for building any API-based app in Kotlin with scalable architecture and testability.
+                    </p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>🛠️ Built With</h3>
+                <div class="tech-items">
+                    <span class="tech-item">Kotlin</span>
+                    <span class="tech-item">Jetpack Compose</span>
+                    <span class="tech-item">MVVM</span>
+                    <span class="tech-item">Retrofit</span>
+                    <span class="tech-item">Dagger Hilt</span>
+                    <span class="tech-item">OpenWeatherMap API</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Open Source -->
+<section class="source-section">
+    <div class="container">
+        <div class="source-card">
+            <h2>🐙 Open Source</h2>
+            <p>
+                SkyCast is fully open source and modular. Clone the repo, use it as a base for your own projects, or contribute improvements!
+            </p>
+            <div class="source-buttons">
+                <a href="https://github.com/ramoliyaYug/AndroidModule2/tree/main/weatherApp" class="btn btn-github" target="_blank">🐙 View on GitHub</a>
+                <a href="https://github.com/ramoliyaYug/AndroidModule2/issues" class="btn btn-secondary" target="_blank">🐛 Report Issue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>⛅ SkyCast</h4>
+                <p>Forecast the moment, wherever you are.</p>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Links</h4>
+                <ul>
+                    <li><a href="../index.html">← Back to AppMandi</a></li>
+                    <li><a href="#download">Download APK</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/AndroidModule2/tree/main/weatherApp">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Support</h4>
+                <ul>
+                    <li><a href="mailto:ramoliyayug55@gmail.com">📧 Email Support</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/AndroidModule2/issues">🐛 Report Bug</a></li>
+                    <li><a href="#developer">👨‍💻 Developer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SkyCast. Made with 🌦️ by AppMandi</p>
+            <p class="footer-note">"Every forecast starts with clean code."</p>
+        </div>
+    </div>
+</footer>
+
+<script src="weatherApp.js"></script>
+</body>
+</html>

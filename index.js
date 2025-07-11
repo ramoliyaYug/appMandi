@@ -47,6 +47,17 @@ const apps = [
         featured: true
     },
     {
+        id: 'weather',
+        name: 'Weather App',
+        icon: '🌦️',
+        description: 'Simple and accurate weather forecasts with beautiful visualizations. Plan your day with confidence!',
+        version: 'v1.0.1',
+        size: '8.2 MB',
+        downloadUrl: 'WeatherApp/assets/apk/weatherapp.apk',
+        pageUrl: 'WeatherApp/weatherApp.html',
+        featured: true
+    },
+    {
         id: 'groupnote',
         name: 'Group Note App',
         icon: '👥',
@@ -78,18 +89,7 @@ const apps = [
         downloadUrl: 'VishalMegaMartApp/assets/apk/vishalmegamartguardtestapp.apk',
         pageUrl: 'VishalMegaMartApp/vmmApp.html',
         featured: false
-    },
-    {
-        id: 'weather',
-        name: 'Weather App',
-        icon: '🌦️',
-        description: 'Simple and accurate weather forecasts with beautiful visualizations. Plan your day with confidence!',
-        version: 'v1.5.0',
-        size: '3.0 MB',
-        downloadUrl: 'WeatherApp/assets/apk/weatherapp.apk',
-        pageUrl: 'WeatherApp/weatherApp.html',
-        featured: true
-    },
+    }
 ];
 
 // Statistics counters
