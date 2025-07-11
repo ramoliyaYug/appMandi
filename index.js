@@ -48,7 +48,7 @@ const apps = [
     },
     {
         id: 'weather',
-        name: 'Weather App',
+        name: 'SkyCast',
         icon: '🌦️',
         description: 'Simple and accurate weather forecasts with beautiful visualizations. Plan your day with confidence!',
         version: 'v1.0.1',
