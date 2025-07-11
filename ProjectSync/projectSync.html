@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#121212"/>
+    <title>ProjectSync - AppMandi</title>
+    <link rel="stylesheet" href="projectSync.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html" class="back-btn">← Back to AppMandi</a>
+            <span class="app-name">🗂️ ProjectSync</span>
+        </div>
+        <details class="nav-toggle">
+            <summary class="nav-summary">☰ Menu</summary>
+            <nav class="nav">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#developer" class="nav-link">Developer</a>
+            </nav>
+        </details>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="overview">
+    <div class="container">
+        <div class="hero-content">
+            <div class="app-header">
+                <div class="app-icon">🗂️</div>
+                <div class="app-info">
+                    <h1 class="app-title">ProjectSync</h1>
+                    <p class="app-subtitle">Simplified project & task management with team sync and automation</p>
+                    <div class="app-meta">
+                        <span class="version">v1.2.0</span>
+                        <span class="size">6.5 MB</span>
+                        <span class="category">Productivity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="assets/apk/projectsync.apk" class="btn btn-primary" id="download-btn">📥 Download APK</a>
+                <button class="btn btn-secondary" onclick="shareApp()">📤 Share App</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Description -->
+<section class="description">
+    <div class="container">
+        <h2>Why ProjectSync? 🧩</h2>
+        <div class="description-content">
+            <p>
+                ProjectSync is your lightweight, mobile-friendly project management app. Whether you're a team of students, developers, or collaborators, it lets you create projects, assign users, manage tasks with deadlines and statuses, and reward progress with automatic badge tracking — just like a mini Jira in your pocket.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>User Authentication</h3>
+                    <p>Login securely and manage your own workspace of projects.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>Project Creation</h3>
+                    <p>Create multiple projects, invite team members, and start assigning tasks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Task Manager</h3>
+                    <p>Create tasks with deadlines and track them by status (To Do, In Progress, Done).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Automations</h3>
+                    <p>Auto-assign badges when users complete tasks marked as "Done".</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏅</div>
+                    <h3>Badge System</h3>
+                    <p>Users earn badges based on completed tasks. View all badges in the profile section.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive UI</h3>
+                    <p>XML based UI designed for smooth Android experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download -->
+<section class="download-section" id="download">
+    <div class="container">
+        <h2>📥 Download & Installation</h2>
+        <div class="download-content">
+            <div class="download-info">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>📱 Android 6.0 or above</li>
+                    <li>💾 10 MB available space</li>
+                    <li>🌐 Internet for syncing team and tasks</li>
+                </ul>
+
+                <h3>Installation Instructions</h3>
+                <ol>
+                    <li>Download the APK file</li>
+                    <li>Enable "Install from Unknown Sources"</li>
+                    <li>Open the APK and install</li>
+                    <li>Login and create your first project!</li>
+                </ol>
+            </div>
+            <div class="download-stats">
+                <div class="stat-item">
+                    <div class="stat-number">6.5 MB</div>
+                    <div class="stat-label">App Size</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">v1.2.0</div>
+                    <div class="stat-label">Latest Version</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Live</div>
+                    <div class="stat-label">Stable Build</div>
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <a href="assets/apk/projectsync.apk" class="btn btn-primary btn-large" id="main-download">📥 Download ProjectSync</a>
+            <button class="btn btn-secondary" onclick="copyDownloadLink()">🔗 Copy Download Link</button>
+        </div>
+    </div>
+</section>
+
+<!-- Developer Section -->
+<section class="developer-section" id="developer">
+    <div class="container">
+        <h2>👨‍💻 Developer Notes</h2>
+        <div class="developer-content">
+            <div class="developer-info">
+                <div class="developer-avatar">📌</div>
+                <div class="developer-text">
+                    <h3>From the Developer</h3>
+                    <p>
+                        ProjectSync was built to solve the problem of collaborative task tracking on mobile. With badge rewards and smart automation, it keeps users engaged while helping small teams stay productive.
+                    </p>
+                    <p>
+                        It's built with XML and follows clean architecture patterns with scalable MVVM and DI via Hilt.
+                    </p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>🛠️ Built With</h3>
+                <div class="tech-items">
+                    <span class="tech-item">Kotlin</span>
+                    <span class="tech-item">XML</span>
+                    <span class="tech-item">MVVM</span>
+                    <span class="tech-item">Firebase Auth</span>
+                    <span class="tech-item">Firebase Realtime DB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Open Source -->
+<section class="source-section">
+    <div class="container">
+        <div class="source-card">
+            <h2>🐙 Open Source</h2>
+            <p>
+                Want to improve the project? Contribute on GitHub or report issues to help refine the next sprint!
+            </p>
+            <div class="source-buttons">
+                <a href="https://github.com/ramoliyaYug/taskboardProAndroidApp" class="btn btn-github" target="_blank">🐙 View on GitHub</a>
+                <a href="https://github.com/ramoliyaYug/taskboardProAndroidApp/issues" class="btn btn-secondary" target="_blank">🐛 Report Issue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🗂️ ProjectSync</h4>
+                <p>Track tasks, reward effort, and sync your team.</p>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Links</h4>
+                <ul>
+                    <li><a href="../index.html">← Back to AppMandi</a></li>
+                    <li><a href="#download">Download APK</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/taskboardProAndroidApp">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Support</h4>
+                <ul>
+                    <li><a href="mailto:ramoliyayug55@gmail.com">📧 Email Support</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/taskboardProAndroidApp/issues">🐛 Report Bug</a></li>
+                    <li><a href="#developer">👨‍💻 Developer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ProjectSync. Made with 🗂️ and ⚙️ by AppMandi</p>
+            <p class="footer-note">"Every task completed brings your team one step closer."</p>
+        </div>
+    </div>
+</footer>
+
+<script src="projectSync.js"></script>
+</body>
+</html>

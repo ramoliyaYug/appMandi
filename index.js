@@ -47,6 +47,17 @@ const apps = [
         featured: true
     },
     {
+        id: 'projectsync',
+        name: 'Project Sync',
+        icon: '🔄',
+        description: 'Manage your projects efficiently with this lightweight project management tool. Track tasks, deadlines, and progress.',
+        version: 'v1.2.0',
+        size: '6.5 MB',
+        downloadUrl: 'ProjectSync/assets/apk/projectsync.apk',
+        pageUrl: 'ProjectSync/projectSync.html',
+        featured: false
+    },
+    {
         id: 'weather',
         name: 'SkyCast',
         icon: '🌦️',
@@ -57,46 +68,33 @@ const apps = [
         pageUrl: 'WeatherApp/weatherApp.html',
         featured: true
     },
-    {
-        id: 'groupnote',
-        name: 'Group Note App',
-        icon: '👥',
-        description: 'Collaborate with friends and colleagues on shared notes. Real-time updates, easy sharing, and perfect for team projects.',
-        version: 'v1.1.0',
-        size: '3.2 MB',
-        downloadUrl: 'GroupNoteApp/assets/apk/groupnoteapp.apk',
-        pageUrl: 'GroupNoteApp/groupNoteApp.html',
-        featured: true
-    },
-    {
-        id: 'projectsync',
-        name: 'Project Sync',
-        icon: '🔄',
-        description: 'Manage your projects efficiently with this lightweight project management tool. Track tasks, deadlines, and progress.',
-        version: 'v1.3.2',
-        size: '3.8 MB',
-        downloadUrl: 'ProjectSync/assets/apk/projectsync.apk',
-        pageUrl: 'ProjectSync/projectSync.html',
-        featured: false
-    },
-    {
-        id: 'vmm',
-        name: 'Vishal Mega Mart',
-        icon: '🛒',
-        description: 'Shop smarter with the unofficial Vishal Mega Mart companion app. Compare prices, find deals, and create shopping lists.',
-        version: 'v1.0.3',
-        size: '4.5 MB',
-        downloadUrl: 'VishalMegaMartApp/assets/apk/vishalmegamartguardtestapp.apk',
-        pageUrl: 'VishalMegaMartApp/vmmApp.html',
-        featured: false
-    }
+    // {
+    //     id: 'groupnote',
+    //     name: 'Group Note App',
+    //     icon: '👥',
+    //     description: 'Collaborate with friends and colleagues on shared notes. Real-time updates, easy sharing, and perfect for team projects.',
+    //     version: 'v1.1.0',
+    //     size: '3.2 MB',
+    //     downloadUrl: 'GroupNoteApp/assets/apk/groupnoteapp.apk',
+    //     pageUrl: 'GroupNoteApp/groupNoteApp.html',
+    //     featured: true
+    // },
+    // {
+    //     id: 'vmm',
+    //     name: 'Vishal Mega Mart',
+    //     icon: '🛒',
+    //     description: 'Shop smarter with the unofficial Vishal Mega Mart companion app. Compare prices, find deals, and create shopping lists.',
+    //     version: 'v1.0.3',
+    //     size: '4.5 MB',
+    //     downloadUrl: 'VishalMegaMartApp/assets/apk/vishalmegamartguardtestapp.apk',
+    //     pageUrl: 'VishalMegaMartApp/vmmApp.html',
+    //     featured: false
+    // }
 ];
 
 // Statistics counters
 let stats = {
-    appsCount: 8,
-    downloadsCount: 42,
-    coffeeCount: '∞'
+    appsCount: apps.length,
 };
 
 // DOM elements
