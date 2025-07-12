@@ -507,7 +507,7 @@ body {
   font-family: 'Courier New', monospace;
   font-size: 0.9rem;
   line-height: 1.5;
-  overflow-x: auto;
+  /*overflow-x: auto;*/
 }
 
 /* Footer */
@@ -551,6 +551,7 @@ body {
 .social-links {
   display: flex;
   gap: 1rem;
+  width:  100%;
 }
 
 .social-link {

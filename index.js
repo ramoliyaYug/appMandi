@@ -7,8 +7,8 @@ const apps = [
         name: 'Chugli-Hub',
         icon: '😼',
         description: 'Anonymous chat app jaha tum bina dare apni chugliyaan share kar sakte ho. Full drama, full fun — bilkul no filter!',
-        version: 'v1.2.0',
-        size: '6 MB',
+        version: 'v1.2.1',
+        size: '2 MB',
         downloadUrl: 'ChugliHub/assets/apk/chuglihub.apk',
         pageUrl: 'ChugliHub/chugliHub.html',
         featured: true
@@ -64,7 +64,7 @@ const apps = [
         description: 'Simple and accurate weather forecasts with beautiful visualizations. Plan your day with confidence!',
         version: 'v1.0.1',
         size: '8.2 MB',
-        downloadUrl: 'WeatherApp/assets/apk/weatherapp.apk',
+        downloadUrl: 'WeatherApp/assets/apk/skycast.apk',
         pageUrl: 'WeatherApp/weatherApp.html',
         featured: true
     },

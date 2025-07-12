@@ -58,7 +58,7 @@ function shareApp() {
 
 // Copy download link
 function copyDownloadLink() {
-    const downloadLink = window.location.origin + '/appMandi/WeatherApp/assets/apk/weatherapp.apk';
+    const downloadLink = window.location.origin + '/appMandi/WeatherApp/assets/apk/skycast.apk';
 
     // Create a temporary input element
     const tempInput = document.createElement('input');
