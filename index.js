@@ -6,7 +6,7 @@ const apps = [
         id: 'chuglihub',
         name: 'Chugli-Hub',
         icon: '😼',
-        description: 'Anonymous chat app jaha tum bina dare apni chugliyaan share kar sakte ho. Full drama, full fun — bilkul no filter!',
+        description: 'Anonymous chat app jaha tum bina dare apni chugliyaan share kar sakte ho. Full drama, full fun-bilkul no filter!',
         version: 'v1.2.1',
         size: '2 MB',
         downloadUrl: 'ChugliHub/assets/apk/chuglihub.apk',
