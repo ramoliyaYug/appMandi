@@ -36,6 +36,17 @@ const apps = [
         featured: true
     },
     {
+        id: 'gfgpt',
+        name: 'gfGPT',
+        icon: '💕',
+        description: 'Your girlfriend response assistant - Never be speechless again!',
+        version: 'v1.0.0',
+        size: '1.7 MB',
+        downloadUrl: 'GfGpt/assets/apk/gfgpt.apk',
+        pageUrl: 'GfGpt/gfGpt.html',
+        featured: true
+    },
+    {
         id: 'quantumchat',
         name: 'Quantum Chat',
         icon: '💬',

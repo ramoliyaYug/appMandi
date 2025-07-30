@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#fce4ec"/>
+    <title>gfGPT - AppMandi</title>
+    <link rel="stylesheet" href="gfGpt.css" />
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html" class="back-btn">← Back to AppMandi</a>
+            <span class="app-name">💕 gfGPT</span>
+        </div>
+        <details class="nav-toggle">
+            <summary class="nav-summary">☰ Menu</summary>
+            <nav class="nav">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#developer" class="nav-link">Developer</a>
+            </nav>
+        </details>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="overview">
+    <div class="container">
+        <div class="hero-content">
+            <div class="app-header">
+                <div class="app-icon">💕</div>
+                <div class="app-info">
+                    <h1 class="app-title">gfGPT</h1>
+                    <p class="app-subtitle">Your girlfriend response assistant - Never be speechless again!</p>
+                    <div class="app-meta">
+                        <span class="version">v1.0.0</span>
+                        <span class="size">1.7 MB</span>
+                        <span class="category">AI Tools</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="assets/apk/gfgpt.apk" class="btn btn-primary" id="download-btn">📥 Download APK</a>
+                <button class="btn btn-secondary" onclick="shareApp()">📤 Share App</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Description -->
+<section class="description">
+    <div class="container">
+        <h2>Why gfGPT? 🤔</h2>
+        <div class="description-content">
+            <p>
+                gfGPT is an Android app that helps boyfriends craft the perfect responses to their girlfriends' messages.
+                Using Google's Firebase Gemini Logic AI, it helps you keep conversations meaningful and stress-free.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful UI</h3>
+                    <p>Lovely pink gradient design with heart icons for a romantic vibe.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered</h3>
+                    <p>Integrated with Google Firebase Gemini Logic AI for smart responses.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Context-Aware</h3>
+                    <p>Understands tone, mood, and relationship dynamics for genuine replies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Simple UX</h3>
+                    <p>Clean layout, just input the message and get an instant AI-crafted reply.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download Section -->
+<section class="download-section" id="download">
+    <div class="container">
+        <h2>📥 Download & Installation</h2>
+        <div class="download-content">
+            <div class="download-info">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>📱 Android 8.0 (API level 26) or higher</li>
+                    <li>💾 10 MB free storage space</li>
+                    <li>🌐 Internet required for AI replies</li>
+                </ul>
+
+                <h3>Installation Instructions</h3>
+                <ol>
+                    <li>Download the APK file</li>
+                    <li>Go to Settings → Security → Unknown Sources</li>
+                    <li>Enable "Install unknown apps"</li>
+                    <li>Open the downloaded APK file</li>
+                    <li>Tap "Install" and charm her away! 💕</li>
+                </ol>
+            </div>
+            <div class="download-stats">
+                <div class="stat-item">
+                    <div class="stat-number">1.7 MB</div>
+                    <div class="stat-label">App Size</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">v1.0.0</div>
+                    <div class="stat-label">Latest Version</div>
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <a href="assets/apk/gfgpt.apk" class="btn btn-primary btn-large" id="main-download">📥 Download gfGPT APK</a>
+            <button class="btn btn-secondary" onclick="copyDownloadLink()">🔗 Copy Download Link</button>
+        </div>
+    </div>
+</section>
+
+<!-- Developer Section -->
+<section class="developer-section" id="developer">
+    <div class="container">
+        <h2>👨‍💻 Developer Notes</h2>
+        <div class="developer-content">
+            <div class="developer-info">
+                <div class="developer-avatar">💘</div>
+                <div class="developer-text">
+                    <h3>From the Developer</h3>
+                    <p>
+                        gfGPT is more than an AI chatbot - it's your relationship wingman! 🥰
+                        Designed to help you stay thoughtful and connected in your conversations.
+                    </p>
+                    <p>
+                        Powered by Google’s Firebase Gemini Logic AI, this project is a fun experiment to blend emotions with logic.
+                        Perfect for boyfriends who want to love better, one text at a time!
+                    </p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>🛠️ Built With</h3>
+                <div class="tech-items">
+                    <span class="tech-item">Kotlin</span>
+                    <span class="tech-item">Jetpack Compose</span>
+                    <span class="tech-item">Material Design 3</span>
+                    <span class="tech-item">Firebase Gemini AI</span>
+                    <span class="tech-item">Coroutines</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Source Code Section -->
+<section class="source-section">
+    <div class="container">
+        <div class="source-card">
+            <h2>🐙 Open Source</h2>
+            <p>
+                Want to explore the logic or contribute a feature? gfGPT is open-source on GitHub. Let's build love, line by line.
+            </p>
+            <div class="source-buttons">
+                <a href="https://github.com/ramoliyaYug/gfGPT" class="btn btn-github" target="_blank">🐙 View on GitHub</a>
+                <a href="https://github.com/ramoliyaYug/gfGPT/issues" class="btn btn-secondary" target="_blank">🐛 Report Issue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>💕 gfGPT</h4>
+                <p>Your AI love language translator 💬❤️</p>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Links</h4>
+                <ul>
+                    <li><a href="../index.html">← Back to AppMandi</a></li>
+                    <li><a href="#download">Download APK</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/gfGPT">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Support</h4>
+                <ul>
+                    <li><a href="mailto:ramoliyayug55@gmail.com">📧 Email Support</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/gfGPT/issues">🐛 Report Bug</a></li>
+                    <li><a href="#developer">👨‍💻 Developer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 gfGPT. Made with 💕 by AppMandi</p>
+            <p class="footer-note">"Love is just one good reply away." 💌</p>
+        </div>
+    </div>
+</footer>
+
+<script src="gfGpt.js"></script>
+</body>
+</html>
