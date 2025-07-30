@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#121212"/>
+    <title>GrindLog - AppMandi</title>
+    <link rel="stylesheet" href="grindLog.css" />
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html" class="back-btn">← Back to AppMandi</a>
+            <span class="app-name">🚀 GrindLog</span>
+        </div>
+        <details class="nav-toggle">
+            <summary class="nav-summary">☰ Menu</summary>
+            <nav class="nav">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#developer" class="nav-link">Developer</a>
+            </nav>
+        </details>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="overview">
+    <div class="container">
+        <div class="hero-content">
+            <div class="app-header">
+                <div class="app-icon">🚀</div>
+                <div class="app-info">
+                    <h1 class="app-title">GrindLog</h1>
+                    <p class="app-subtitle">Your daily DSA + CP journal. Track your grind, set goals, and level up daily.</p>
+                    <div class="app-meta">
+                        <span class="version">v1.0.0</span>
+                        <span class="size">1.4 MB</span>
+                        <span class="category">Productivity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="assets/apk/grindlog.apk" class="btn btn-primary" id="download-btn">📥 Download APK</a>
+                <button class="btn btn-secondary" onclick="shareApp()">📤 Share App</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Description -->
+<section class="description">
+    <div class="container">
+        <h2>Why GrindLog? 🤔</h2>
+        <div class="description-content">
+            <p>
+                GrindLog is built for every serious coder who’s grinding through LeetCode, Codeforces, GFG and more. Track your daily goals, log your progress, and analyze everything — all in one place!
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🗓️</div>
+                    <h3>Today Tracker</h3>
+                    <p>Log what you’ve solved today on each platform with completion percentage and notes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Contest Reminders</h3>
+                    <p>Set reminders for contests or custom events with local notifications 1 hour before.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Visual breakdown of platform-wise progress filtered by week/month/year.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>To-Do Progress</h3>
+                    <p>Daily to-dos with completion tracking and productivity stats.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download Section -->
+<section class="download-section" id="download">
+    <div class="container">
+        <h2>📥 Download & Installation</h2>
+        <div class="download-content">
+            <div class="download-info">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>📱 Android 8.0 (API level 26) or higher</li>
+                    <li>💾 30 MB free storage space</li>
+                    <li>🚫 No internet needed after install</li>
+                </ul>
+
+                <h3>Installation Instructions</h3>
+                <ol>
+                    <li>Download the APK file</li>
+                    <li>Go to Settings → Security → Unknown Sources</li>
+                    <li>Enable "Install unknown apps"</li>
+                    <li>Open the downloaded APK file</li>
+                    <li>Tap "Install" and start grinding! 💪</li>
+                </ol>
+            </div>
+            <div class="download-stats">
+                <div class="stat-item">
+                    <div class="stat-number">1.4 MB</div>
+                    <div class="stat-label">App Size</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">v1.0.0</div>
+                    <div class="stat-label">Latest Version</div>
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <a href="assets/apk/grindlog.apk" class="btn btn-primary btn-large" id="main-download">📥 Download GrindLog APK</a>
+            <button class="btn btn-secondary" onclick="copyDownloadLink()">🔗 Copy Download Link</button>
+        </div>
+    </div>
+</section>
+
+<!-- Developer Section -->
+<section class="developer-section" id="developer">
+    <div class="container">
+        <h2>👨‍💻 Developer Notes</h2>
+        <div class="developer-content">
+            <div class="developer-info">
+                <div class="developer-avatar">💻</div>
+                <div class="developer-text">
+                    <h3>From the Developer</h3>
+                    <p>
+                        Hey grinders! 👋 I built GrindLog to replace messy spreadsheets and scattered notes. It’s time to gamify your coding journey.
+                    </p>
+                    <p>
+                        Built in Kotlin with Jetpack Compose and RoomDB, this app is my daily driver too. Let’s level up together — one question at a time!
+                    </p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>🛠️ Built With</h3>
+                <div class="tech-items">
+                    <span class="tech-item">Kotlin</span>
+                    <span class="tech-item">Jetpack Compose</span>
+                    <span class="tech-item">RoomDB</span>
+                    <span class="tech-item">Dagger Hilt</span>
+                    <span class="tech-item">MVVM + Clean Architecture</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Source Code Section -->
+<section class="source-section">
+    <div class="container">
+        <div class="source-card">
+            <h2>🐙 Open Source</h2>
+            <p>
+                GrindLog is open source. You’re welcome to contribute, raise issues, or just explore the codebase. Consistency is 🔑.
+            </p>
+            <div class="source-buttons">
+                <a href="https://github.com/ramoliyaYug/grindLog" class="btn btn-github" target="_blank">🐙 View on GitHub</a>
+                <a href="https://github.com/ramoliyaYug/grindLog/issues" class="btn btn-secondary" target="_blank">🐛 Report Issue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🚀 GrindLog</h4>
+                <p>Track your code. Level up your grind.</p>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Links</h4>
+                <ul>
+                    <li><a href="../index.html">← Back to AppMandi</a></li>
+                    <li><a href="#download">Download APK</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/grindLog">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Support</h4>
+                <ul>
+                    <li><a href="mailto:ramoliyayug55@gmail.com">📧 Email Support</a></li>
+                    <li><a href="https://github.com/ramoliyaYug/grindLog/issues">🐛 Report Bug</a></li>
+                    <li><a href="#developer">👨‍💻 Developer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GrindLog. Made with ❤️ by AppMandi</p>
+            <p class="footer-note">"Consistency beats talent when talent doesn’t grind." 💪</p>
+        </div>
+    </div>
+</footer>
+
+<script src="grindLog.js"></script>
+</body>
+</html>

@@ -25,6 +25,17 @@ const apps = [
         featured: true
     },
     {
+        id: 'grindlog',
+        name: 'GrindLog',
+        icon: '🗓️',
+        description: 'Your daily DSA + CP journal. Track your grind, set goals, and level up daily.',
+        version: 'v1.0.0',
+        size: '1.4 MB',
+        downloadUrl: 'GrindLog/assets/apk/grindlog.apk',
+        pageUrl: 'GrindLog/grindLog.html',
+        featured: true
+    },
+    {
         id: 'quantumchat',
         name: 'Quantum Chat',
         icon: '💬',
